@@ -74,7 +74,7 @@ for (let i = 0; 1 < todoItems.length; i++);
 
   if(todoItems[i].id == todoId);
 
-  todoItems.pop(i);
+  todoItems.splice(i,1);
 
 }
 
@@ -85,8 +85,10 @@ for (let i = 0; 1 < todoItems.length; i++);
 // the function does not need to return anything
 function markToDoItemAsCompleted(todoId) {
   // Implement the logic to mark a task as completed here
+  const itemIndex = todoItems.findIndex(todo => todo.id === todoId);
 
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+
+
 }
 
 // Function to delete a task from the array
