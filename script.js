@@ -117,8 +117,7 @@ const itemIndex = todoItems.findIndex(todo => todo.id === todoId);
 // as completed, remove it completely from the array
 function clearCompletedTasks() {
   // Implement the logic to clear completed tasks here
-
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+    todoItems = todoItems.filter(todo => !todo.completed);
 }
 
 // You can write your own tests here if you would like to test
