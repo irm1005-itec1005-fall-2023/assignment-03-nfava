@@ -105,7 +105,11 @@ function markToDoItemAsCompleted(todoId) {
 function deleteToDoItem(todoId) {
   // Implement the logic to remove a task here
 
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+const itemIndex = todoItems.findIndex(todo => todo.id === todoId);
+
+  if( itemIndex != -1){
+    todoItems.splice(itemIndex,1);
+  }
 }
 
 // Function to clear all completed tasks
