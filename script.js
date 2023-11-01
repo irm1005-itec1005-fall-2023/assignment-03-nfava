@@ -52,7 +52,12 @@
 function addToDoItem(text) {
   // Implement the logic to add a task here
 
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+  const todo = {
+    text: text
+  };
+
+  todoItems.push(todo);
+  console.log(todoItems);
 }
 
 // Function to remove a todo to the list
