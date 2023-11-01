@@ -45,6 +45,7 @@
 
 // Initialise an empty array with the variable name todoItems
   let todoItems = [];
+  let nextID = 1; 
 // Function to add a todo to the list
 // It should accept a string as a parameter (text of the todo item)
 // and it should add a new todo item to the todoItems array
@@ -53,7 +54,9 @@ function addToDoItem(text) {
   // Implement the logic to add a task here
 
   let todo = {
-    text: text
+    id: nextID,
+    text: text,
+    completed: false,
   };
 
   todoItems.push(todo);
