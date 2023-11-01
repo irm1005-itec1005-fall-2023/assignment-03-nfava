@@ -67,8 +67,12 @@ function addToDoItem(text) {
 // the function does not need to return anything
 function removeToDoItem(todoId) {
   // Implement the logic to add a task here
+for (let i = 0; 1 < todoItems.length; i++);
 
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+  if(todoItems[i].id == todoId);
+
+  todoItems.pop(i);
+  
 }
 
 // Function to mark a task as completed
