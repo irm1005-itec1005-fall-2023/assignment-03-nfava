@@ -52,7 +52,7 @@
 function addToDoItem(text) {
   // Implement the logic to add a task here
 
-  const todo = {
+  let todo = {
     text: text
   };
 
@@ -72,7 +72,7 @@ for (let i = 0; 1 < todoItems.length; i++);
   if(todoItems[i].id == todoId);
 
   todoItems.pop(i);
-  
+
 }
 
 // Function to mark a task as completed
