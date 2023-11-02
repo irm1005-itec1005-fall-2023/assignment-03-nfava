@@ -60,6 +60,7 @@ function addToDoItem(text) {
   };
 
   todoItems.push(todo);
+  nextID++;
   console.log(todoItems);
 }
 
