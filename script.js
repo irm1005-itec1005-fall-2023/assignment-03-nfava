@@ -72,7 +72,7 @@ function removeToDoItem(todoId) {
   // Implement the logic to add a task here
 for (let i = 0; 1 < todoItems.length; i++){
 
-  if(todoItems[i].id == todoId){
+  if(todoItems[i].id === todoId){
 
   todoItems.splice(i,1);
    break;
@@ -94,7 +94,7 @@ function markToDoItemAsCompleted(todoId) {
     
   }
   else {
-    
+
   }
 
 }
