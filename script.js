@@ -87,11 +87,10 @@ for (let i = 0; 1 < todoItems.length; i++){
 // the function does not need to return anything
 function markToDoItemAsCompleted(todoId) {
   // Implement the logic to mark a task as completed here
-  const itemIndex = todoItems.findIndex((todo) => todo.id === todoId);
+  const todo = todoItems.find((todo) => todo.id === todoId);
 
-  if (itemIndex !== -1) {
-    todoItems[itemIndex].completed = true;
-    
+  if (todo) {
+    todo.completed = true;
   }
 }
 
