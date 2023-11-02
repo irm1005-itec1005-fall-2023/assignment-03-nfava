@@ -94,7 +94,7 @@ function markToDoItemAsCompleted(todoId) {
     
   }
   else {
-    todoItems.push({id: todoId, completed: true})
+    
   }
 
 }
