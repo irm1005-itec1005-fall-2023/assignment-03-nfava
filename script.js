@@ -93,6 +93,9 @@ function markToDoItemAsCompleted(todoId) {
     todoItems[itemIndex].completed = true;
     
   }
+  else {
+    todoItems.push({id: todoId, completed: true})
+  }
 
 }
 
