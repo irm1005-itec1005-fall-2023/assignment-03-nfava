@@ -52,7 +52,7 @@
 // the function does not need to return anything
 function addToDoItem(text) {
   // Implement the logic to add a task here
-
+if (typeof text !== boolean){
   let todo = {
     id: nextID,
     text: text,
@@ -62,6 +62,10 @@ function addToDoItem(text) {
   todoItems.push(todo);
   nextID++;
   console.log(todoItems);
+}
+else {
+  console.log("You have entered a boolean, please try again.");
+}
 }
 
 // Function to remove a todo to the list
