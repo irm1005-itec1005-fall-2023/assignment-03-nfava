@@ -52,7 +52,7 @@
 // the function does not need to return anything
 function addToDoItem(text) {
   // Implement the logic to add a task here
-if (typeof text !== boolean){
+
   let todo = {
     id: nextID,
     text: text,
@@ -62,10 +62,7 @@ if (typeof text !== boolean){
   todoItems.push(todo);
   nextID++;
   console.log(todoItems);
-}
-else {
-  console.log("INVALID ENTRY: You have entered a boolean, please try again.");
-}
+
 }
 
 // Function to remove a todo to the list
@@ -110,11 +107,6 @@ function deleteToDoItem(todoId) {
   // Implement the logic to remove a task here
 
 const itemIndex = todoItems.findIndex(todo => todo.id === todoId);
-
-  if(typeof todoId !== 'string' && typeof  todoId === 'number'){
-    console.log("INVALID: TodoID, It MUST be a number or string!");
-    return;
-  }
 
   if( itemIndex != -1){
     todoItems.splice(itemIndex,1);
