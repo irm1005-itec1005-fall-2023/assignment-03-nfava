@@ -64,7 +64,7 @@ if (typeof text !== boolean){
   console.log(todoItems);
 }
 else {
-  console.log("INVALD: You have entered a boolean, please try again.");
+  console.log("INVALID ENTRY: You have entered a boolean, please try again.");
 }
 }
 
