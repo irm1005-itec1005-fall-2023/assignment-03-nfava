@@ -111,7 +111,7 @@ function deleteToDoItem(todoId) {
 
 const itemIndex = todoItems.findIndex(todo => todo.id === todoId);
 
-  if(typeof todoId === 'string' && typeof  todoId == 'number'){
+  if(typeof todoId !== 'string' && typeof  todoId === 'number'){
     console.log("INVALID: TodoID, It MUST be a number or string!");
     return;
   }
