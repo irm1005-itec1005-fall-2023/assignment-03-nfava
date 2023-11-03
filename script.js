@@ -52,17 +52,14 @@
 // the function does not need to return anything
 function addToDoItem(text) {
   // Implement the logic to add a task here
-
   let todo = {
     id: nextID,
     text: text,
     completed: false,
   };
-
   todoItems.push(todo);
   nextID++;
   console.log(todoItems);
-
 }
 
 // Function to remove a todo to the list
